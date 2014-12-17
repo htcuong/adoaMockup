@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ADOA demo mockup</title>
+<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+<link href="css/reset.css" type="text/css" rel="stylesheet"/>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<link href="css/component.css" type="text/css" rel="stylesheet"/>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/boxesFx.js"></script>
+
+</head>
+
+<body id="home">
+	<header id="top-header">
+    	<div class="center">
+    		<a id="logo" href="#"><img src="images/logo-header.png" alt="Adoa" title="Adoa" height="70" /></a>
+            <nav id="main-nav" role="navigation">
+            	<ul>
+                	<li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content" role="main">
+    	<div id="sliders">
+        	<div id="boxgallery" class="boxgallery" data-effect="effect-1">
+				<div class="panel"><img src="images/sliders/1.jpg" alt="Image 1"/></div>
+				<div class="panel"><img src="images/sliders/2.jpg" alt="Image 2"/></div>
+				<div class="panel"><img src="images/sliders/3.jpg" alt="Image 3"/></div>
+				<div class="panel"><img src="images/sliders/4.jpg" alt="Image 4"/></div>
+			</div>
+            <header class="codrops-header">
+				<h1>Four Boxes Slideshow <span>Recreating the background image slideshow seen on <a href="http://www.atelier-serge-thoraval.com/en/">Atelier Serge Thoroval's website</a></span></h1>
+				<nav class="codrops-demos">
+					<a class="current-demo" href="index.html">Serge Thoroval</a>
+					<a href="index2.html">Lateral</a>
+					<a href="index3.html">Fall</a>
+				</nav>
+			</header>
+        </div>
+        <article id="features">
+        	<header>
+            	<h1 class="main-title">Features</h1>
+            </header>
+            <div class="center">
+            	 <section class="item-post"> 
+                 	<div class="col-left">
+                    	<img class="icon" src="images/icons/icon-features-1.png" />
+                    </div>
+                    <div class="col-right">
+                    	<h2 class="title">Branding</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                    </div>
+                 </section>
+                 
+                 <section class="item-post"> 
+                 	<div class="col-left">
+                    	<img class="icon" src="images/icons/icon-features-2.png" />
+                    </div>
+                    <div class="col-right">
+                    	<h2 class="title">Development</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                    </div>
+                 </section>
+                 
+                 <section class="item-post"> 
+                 	<div class="col-left">
+                    	<img class="icon" src="images/icons/icon-features-3.png" />
+                    </div>
+                    <div class="col-right">
+                    	<h2 class="title">Consulting</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                    </div>
+                 </section>
+                 <div id="features-dots">
+                     <ul>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+                 </div>
+            </div>
+        </article >
+    </main>
+</body>
+
+<script>
+	new BoxesFx( document.getElementById( 'boxgallery' ) );
+	
+$(function() {
+	$('nav#main-nav a').bind('click',function(event){
+		var $anchor = $(this);
+		var top_height = $($anchor.attr('href')).offset().top;
+		$('html, body').stop().animate({
+			scrollTop: top_height
+		}, 1500,'easeInOutExpo');
+		event.preventDefault();
+	});
+	
+});
+</script>
+        
+</html>
