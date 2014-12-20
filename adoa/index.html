@@ -1,31 +1,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-touch ">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>ADOA demo mockup</title>
+<link href="css/fonts.css" type="text/css" rel="stylesheet"/>
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet"/>
 <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
 <link href="css/reset.css" type="text/css" rel="stylesheet"/>
 <link href="css/style.css" type="text/css" rel="stylesheet"/>
 <link href="css/component.css" type="text/css" rel="stylesheet"/>
+<link href="css/metro-slider.css" type="text/css" rel="stylesheet"/>
+
+
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/jquery.easing.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+
 <script src="js/modernizr.custom.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/boxesFx.js"></script>
 
+
 </head>
 
-<body id="home">
+<body id="home" data-smooth-scrolling="1" >
 	<header id="top-header">
     	<div class="center">
     		<a id="logo" href="#"><img src="images/logo-header.png" alt="Adoa" title="Adoa" height="70" /></a>
             <nav id="main-nav" role="navigation">
             	<ul>
-                	<li><a class="active" href="#home">Home</a></li>
+                	<li class="home"><a class="active" href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,9 +49,9 @@
             <header class="codrops-header">
 				<h1>Four Boxes Slideshow <span>Recreating the background image slideshow seen on <a href="http://www.atelier-serge-thoraval.com/en/">Atelier Serge Thoroval's website</a></span></h1>
 				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Serge Thoroval</a>
-					<a href="index2.html">Lateral</a>
-					<a href="index3.html">Fall</a>
+					<a class="current-demo" href="">Serge Thoroval</a>
+					<a href="">Lateral</a>
+					<a href="">Fall</a>
 				</nav>
 			</header>
         </div>
@@ -51,20 +59,19 @@
         	<header>
             	<h1 class="main-title">Features</h1>
             </header>
-            <div class="center">
-            	 <section class="item-post"> 
+            <div class="center isotope" id="portfolio">
+            	 <section class="item-post p-icons isotope-item"> 
                  	<div class="col-left">
                     	<img class="icon" src="images/icons/icon-features-1.png" />
                     </div>
                     <div class="col-right">
                     	<h2 class="title">Branding</h2>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>                 
                     </div>
                  </section>
                  
-                 <section class="item-post"> 
+                 <section class="item-post p-icons isotope-item"> 
                  	<div class="col-left">
                     	<img class="icon" src="images/icons/icon-features-2.png" />
                     </div>
@@ -72,11 +79,10 @@
                     	<h2 class="title">Development</h2>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                     </div>
                  </section>
                  
-                 <section class="item-post"> 
+                 <section class="item-post p-icons isotope-item"> 
                  	<div class="col-left">
                     	<img class="icon" src="images/icons/icon-features-3.png" />
                     </div>
@@ -84,9 +90,44 @@
                     	<h2 class="title">Consulting</h2>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+
+                    </div>
+                 </section>
+                 
+                 <section class="item-post p-icons isotope-item"> 
+                 	<div class="col-left">
+                    	<img class="icon" src="images/icons/icon-features-1.png" />
+                    </div>
+                    <div class="col-right">
+                    	<h2 class="title">Branding</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>                 
+                    </div>
+                 </section>
+                 
+                 <section class="item-post p-icons isotope-item"> 
+                 	<div class="col-left">
+                    	<img class="icon" src="images/icons/icon-features-2.png" />
+                    </div>
+                    <div class="col-right">
+                    	<h2 class="title">Development</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                     </div>
                  </section>
+                 
+                 <section class="item-post p-icons isotope-item"> 
+                 	<div class="col-left">
+                    	<img class="icon" src="images/icons/icon-features-3.png" />
+                    </div>
+                    <div class="col-right">
+                    	<h2 class="title">Consulting</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+
+                    </div>
+                 </section>
+                <!-- 
                  <div id="features-dots">
                      <ul>
                         <li class="active"></li>
@@ -94,23 +135,439 @@
                         <li></li>
                      </ul>
                  </div>
+                -->
             </div>
-        </article >
-    </main>
-</body>
+        </article>
+        
+        <article id="works">
+        	<header>
+            	<h1 class="main-title">Works</h1>
+            </header>
+            <div class="vc_banner block">
+                <div class="wrapper">
+                      <div class="vc_metro-wrapper">
+                        <div class="vc_metro-slider-outer">
+                          <div class="viewport">
+                            <div class="overview" style="left: -650.5px;">
+                              <div class="vc_metro-slider" style="width: 2885px;">
+                                <ul>
+                                  <li class="odd">
+                                    <ul>
+                                      <li class="box type-1 anim-slide-right"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_01.png" alt="example image">
+                                        <div class="mouse-over">
+                                          <div class="content">
+                                            <div class="text">
+                                              <h2> FIND OUT <span class="vc_main-color"> ABOUT US </span> </h2>
+                                              <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+                                              <div class="vc_btn"> Learn More </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </a> </li>
+                                    </ul>
+                                  </li>
+                                  <li class="even">
+                                    <ul>
+                                      <li class="box type-2 anim-slide-left"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_02.png" alt="example image">
+                                        <div class="mouse-over bg-none">
+                                          <div class="content">
+                                            <div class="text">
+                                              <h2> COLLECT <span class="vc_main-color"> CLIENTS NEEDS </span> </h2>
+                                              <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.. </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </a> </li>
+                                      <li class="box type-3 anim-rotate"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_03.png" alt="example image">
+                                        <div class="mouse-over bg-none">
+                                          <div class="content"> <img src="images/metro-img/web_design_hover_03.png" alt="example image"> </div>
+                                        </div>
+                                        </a> </li>
+                                      <li class="box type-3 none"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_04.png" alt="example image"> </a> </li>
+                                      <li class="box type-3 anim-hover"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_05.png" alt="example image">
+                                        <div class="mouse-over bg-none">
+                                          <div class="content"> <img src="images/metro-img/web_design_hover_05.png" alt="example image"> </div>
+                                        </div>
+                                        </a> </li>
+                                      <li class="box type-2  anim-slide-top"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_06.png" alt="example image">
+                                        <div class="mouse-over  bg-none">
+                                          <div class="content">
+                                            <div class="text">
+                                              <h2> PLAN TO MAXIMIZE <span class="vc_main-color"> WEBSITE PURPOSE </span> </h2>
+                                              <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.. </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </a> </li>
+                                      <li class="box type-3 none"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_07.png" alt="example image"> </a> </li>
+                                    </ul>
+                                  </li>
+                                  <li class="odd">
+                                    <ul>
+                                      <li class="box type-1  anim-slide-left"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_08.png" alt="example image">
+                                        <div class="mouse-over bg-none">
+                                          <div class="content">
+                                            <div class="text">
+                                              <h2> DESIGNING <span class="vc_main-color"> &amp; TEMPLATING </span> </h2>
+                                              <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+                                              <div class="vc_btn"> Learn More </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </a> </li>
+                                    </ul>
+                                  </li>
+                                  <li class="even">
+                                    <ul>
+                                      <li class="box type-2 anim-hover"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_09.png" alt="example image">
+                                        <div class="mouse-over">
+                                          <div class="content">
+                                            <div class="text">
+                                              <h2> Code <span class="vc_main-color"> Developing </span> </h2>
+                                              <p> Hover With Alpha Background </p>
+                                              <div class="vc_btn"> Learn More </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </a> </li>
+                                      <li class="box type-3 anim-rotate"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_10.png" alt="example image">
+                                        <div class="mouse-over">
+                                          <div class="content">
+                                            <div class="text">
+                                              <h2> Boost <span class="vc_main-color"> Sales </span> </h2>
+                                              <p> Flip with Alpha Background </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </a> </li>
+                                      <li class="box type-3 none"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_11.png" alt="example image"> </a> </li>
+                                      <li class="box type-3 none"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_12.png" alt="example image"> </a> </li>
+                                      <li class="box type-2  anim-slide-bottom"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_13.png" alt="example image">
+                                        <div class="mouse-over">
+                                          <div class="content">
+                                            <div class="text">
+                                              <h2> Testing Your <span class="vc_main-color"> Website </span> </h2>
+                                              <p> Slide with Alpha Background </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </a> </li>
+                                      <li class="box type-3  anim-slide-left"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_14.png" alt="example image">
+                                        <div class="mouse-over bg-none">
+                                          <div class="content"> <img src="images/metro-img/web_design_hover_14.png" alt="example image"> </div>
+                                        </div>
+                                        </a> </li>
+                                    </ul>
+                                  </li>
+                                  <li class="odd">
+                                    <ul>
+                                      <li class="box type-1 anim-rotate"> <a href="javascript:void(0)"> <img src="images/metro-img/web_design_15.png" alt="example image">
+                                        <div class="mouse-over">
+                                          <div class="content">
+                                            <div class="text">
+                                              <h2> Your Website <span class="vc_main-color"> Live! </span> </h2>
+                                              <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </a> </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- vc_metro-slider --> 
+                            </div>
+                            <!-- overview --> 
+                          </div>
+                          <!-- viewport -->
+                          <div class="scrollbar">
+                            <div class="track">
+                              <div class="thumb vc_bg-color">
+                                <div class="btn-slide"> </div>
+                                <div class="end"> </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- vc_metro-slider-outer --> 
+                      </div>
+                      <!-- vc_metro-wrapper --> 
+                </div>
+                <!-- wrapper --> 
+              </div>
+        </article>
+        
+        <article id="team">
+        	<header>
+            	<h1 class="main-title">Teams</h1>
+                <ul class="nav nav-pills center" id="team-filter">
+                  <li class="active"><a data-filter="*" href="#">All</a></li>
+                  <li class=""><a data-filter=".p-php" href="#">PHP</a></li>
+                  <li class=""><a data-filter=".p-node-js" href="#">Node js</a></li>
+                  <li class=""><a data-filter=".p-asp" href="#">Asp</a></li>
+                  <li class=""><a data-filter=".p-java" href="#">Java</a></li>
+                </ul>
+            </header>
+            <div class="center">
+				
+                <article id="list-team">
+                	<section class="item-team p-node-js"> 
+						<div class="icon-round">
+                        	<div class="bg-wrapper">
+                        		<div class="bg">
+                        			<img src="images/teams/1.jpg" />
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="splitter"></div>
+                        <h3 class="name-team">Anna Mariane</h3>
+                        <!--<a class="btn btn-small" href="#">About</a>-->
+                	</section>
+                    
+                	<section class="item-team p-node-js p-java"> 
+						<div class="icon-round">
+                        	<div class="bg-wrapper">
+                        		<div class="bg">
+                        			<img src="images/teams/2.jpg" />
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="splitter"></div>
+                        <h3 class="name-team">Anna Mariane</h3>
+                        <!--<a class="btn btn-small" href="#">About</a>-->
+                	</section>
+                
+                	<section class="item-team p-node-js p-java"> 
+						<div class="icon-round">
+                        	<div class="bg-wrapper">
+                        		<div class="bg">
+                        			<img src="images/teams/3.jpg" />
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="splitter"></div>
+                        <h3 class="name-team">Anna Mariane</h3>
+                       <!--<a class="btn btn-small" href="#">About</a>-->
+                	</section>
+               
+                	<section class="item-team p-php"> 
+						<div class="icon-round">
+                        	<div class="bg-wrapper">
+                        		<div class="bg">
+                        			<img src="images/teams/4.jpg" />
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="splitter"></div>
+                        <h3 class="name-team">Anna Mariane</h3>
+                        <!--<a class="btn btn-small" href="#">About</a>-->
+                	</section>
+                
+                	<section class="item-team p-php p-node-js"> 
+						<div class="icon-round">
+                        	<div class="bg-wrapper">
+                        		<div class="bg">
+                        			<img src="images/teams/1.jpg" />
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="splitter"></div>
+                        <h3 class="name-team">Anna Mariane</h3>
+                        <!--<a class="btn btn-small" href="#">About</a>-->
+                	</section>
+                
+                	<section class="item-team p-asp p-node-js"> 
+						<div class="icon-round">
+                        	<div class="bg-wrapper">
+                        		<div class="bg">
+                        			<img src="images/teams/2.jpg" />
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="splitter"></div>
+                        <h3 class="name-team">Anna Mariane</h3>
+                        <!--<a class="btn btn-small" href="#">About</a>-->
+                	</section>
+                
+                	<section class="item-team p-asp"> 
+						<div class="icon-round">
+                        	<div class="bg-wrapper">
+                        		<div class="bg">
+                        			<img src="images/teams/3.jpg" />
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="splitter"></div>
+                        <h3 class="name-team">Anna Mariane</h3>
+                        <!--<a class="btn btn-small" href="#">About</a>-->
+                	</section>
+                
+                	<section class="item-team p-node-js"> 
+						<div class="icon-round">
+                        	<div class="bg-wrapper">
+                        		<div class="bg">
+                        			<img src="images/teams/4.jpg" />
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="splitter"></div>
+                        <h3 class="name-team">Anna Mariane</h3>
+                        <!--<a class="btn btn-small" href="#">About</a>-->
+                	</section>
+                </article>
+                
+            </div>
+        </article>
+            
+        <article id="contact">
+        	<header>
+            	<h1 class="main-title">Contact Us</h1>
+            </header>
+            <div class="center">
+            	<section id="list-blogs"> 
+                	<h2 class="title-list"> Latest <span class="main-color"> Blogs </span> </h2>
+                	<article class="blog-row clearfix">
+                        <div class="blog-left">
+                          <div class="vc_anim vc_anim-slide"> 
+                          	<a class="vc_preview" href="#"> <img src="images/blog/01.jpg" alt="example image"> </a>
+                          </div>
+                        </div>
+                        <div class="blog-right clearfix">
+                          <h3> <a href="blog-single.php"> Starting a new business </a> </h3>
+                          <span class="date"> 14 February 2013 </span> <span class="comments"> <i class="fa fa-comments"> </i> 16 </span> <span class="taxonomy"> <i class="fa fa-tags"> </i> <a href="#"> Design </a>, <a href="#"> Creative </a> </span>
+                          <div class="description">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidtation ullamco laboris nisi ut aliquip ex... <a class="vc_read-more" href="blog-single.php"> read more </a> </p>
+                          </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-row clearfix">
+                        <div class="blog-left">
+                          <div class="vc_anim vc_anim-slide"> 
+                          	<a class="vc_preview" href="#"> <img src="images/blog/02.jpg" alt="example image"> </a>
+                          </div>
+                        </div>
+                        <div class="blog-right clearfix">
+                          <h3> <a href="blog-single.php">  Building Up Your Portfolio  </a> </h3>
+                          <span class="date"> 14 February 2013 </span> <span class="comments"> <i class="fa fa-comments"> </i> 16 </span> <span class="taxonomy"> <i class="fa fa-tags"> </i> <a href="#"> Design </a>, <a href="#"> Creative </a> </span>
+                          <div class="description">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidtation ullamco laboris nisi ut aliquip ex... <a class="vc_read-more" href="blog-single.php"> read more </a> </p>
+                          </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-row clearfix">
+                        <div class="blog-left">
+                          <div class="vc_anim vc_anim-slide"> 
+                          	<a class="vc_preview" href="#"> <img src="images/blog/03.jpg" alt="example image"> </a>
+                          </div>
+                        </div>
+                        <div class="blog-right clearfix">
+                          <h3> <a href="blog-single.php">  Creativity in Positivity  </a> </h3>
+                          <span class="date"> 14 February 2013 </span> <span class="comments"> <i class="fa fa-comments"> </i> 16 </span> <span class="taxonomy"> <i class="fa fa-tags"> </i> <a href="#"> Design </a>, <a href="#"> Creative </a> </span>
+                          <div class="description">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidtation ullamco laboris nisi ut aliquip ex... <a class="vc_read-more" href="blog-single.php"> read more </a> </p>
+                          </div>
+                        </div>
+                    </article>
+                    
+                </section>
+                
+                <section id="form-contact"> 
+                	
+                  <h2 class="title-list"> Contact <span class="vc_main-color"> Us </span> </h2>
+                  <div class="vc_splitter"> <span class="bg"> </span> </div>
+                  <div id="contact-form-result">
+                      <div id="success" class="alert alert-success hidden"><button type="button" class="close" data-dismiss="alert">×</button>We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.</div>
+                      <div id="error" class="alert alert-danger hidden"><button type="button" class="close" data-dismiss="alert">×</button> </div>
+                      <div id="empty" class="alert alert-danger hidden"><button type="button" class="close" data-dismiss="alert">×</button>Please <strong>Fill up</strong> all the Fields and Try Again.</div>
+                      <div id="unexpected" class="alert alert-danger hidden"><button type="button" class="close" data-dismiss="alert">×</button>An <strong>unexpected error</strong> occured. Please Try Again later.</div>                 
+                  </div>               
+                  <form novalidate="novalidate" action="" method="post" id="contact-form-widget" name="contact-form-widget" role="form">
+                    <input value="test@venmond.com" name="admin-email" id="admin-email" type="hidden">
+                    <input value="Venmond, Inc." name="admin-name" id="admin-name" type="hidden">
+                    <div class="form-group">
+                        <input onfocus="if(this.value=='Name:') this.value='';" onblur="if(this.value=='') this.value='Name:';" value="Name:" size="35" class="required" id="contact-form-name" name="contact-form-name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <input onfocus="if(this.value=='E-mail:') this.value='';" onblur="if(this.value=='') this.value='E-mail:';" value="E-mail:" size="35" class="required email" id="contact-form-email" name="contact-form-email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea onfocus="if(this.value=='Message:') this.value='';" onblur="if(this.value=='') this.value='Message:';" class="required" id="contact-form-message" name="contact-form-message" cols="32" rows="10">Message:</textarea>
+                    </div>
+                    <div class="form-group">
+                        <input value="Send Message" class="vc_btn" id="contact-form-submit" name="contact-form-submit" type="submit">
+                        <div id="contact-form-loader"> </div>                
+                    </div>
+                    
+                  </form>
 
+                </section>
+            
+            </div>
+            
+        </article>
+        
+    </main>
+    
+    <footer id="footer" >
+        <div class="center">
+          <div class="wrapper">
+            <div class="container">
+              <div class="vc_footer-line"> </div>
+              <div class="bg">
+                <div class="row">
+                  <div class=" col-sm-12 col-md-6">
+                    <div class="copyright pull-left">
+                      <h5> Copyright &copy;2014 ADOA. All Rights Reserved  </h5>
+                    </div>
+                  </div>
+                  <div class="social">
+                    <div class="vc_social-share vc_tight"> 
+                      <a href="#" class="twitter" title="Twitter"> <i class="fa fa-twitter"></i> </a> 
+                      <a href="#" class="facebook" title="Facebook"> <i class="fa fa-facebook"></i> </a> 
+                      <a href="#" class="gplus" title="Gplus"> <i class=" fa fa-google-plus"></i> </a> 
+                      <a href="#" class="linkedin" title="linkedin"> <i class="fa fa-linkedin"></i> </a> 
+                      <a href="#" class="email" title="email"> <i class="fa fa-envelope"></i> </a> 
+                      <a href="#" class="rss" title="Rss"> <i class="fa fa-rss"></i> </a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+  
+  <a id="back-top" class="back-top visible" href="#"><i class="fa fa-chevron-up icon-white"> </i></a>
+  
+</body>
+<script src="js/metro-slider.js"></script>
+<script src="js/tinyscrollbar.js"></script>
+<script src="js/portfolio.js"></script>
 <script>
-	new BoxesFx( document.getElementById( 'boxgallery' ) );
+new BoxesFx( document.getElementById( 'boxgallery' ) );
 	
 $(function() {
 	$('nav#main-nav a').bind('click',function(event){
 		var $anchor = $(this);
 		var top_height = $($anchor.attr('href')).offset().top;
+		$('nav#main-nav a').removeClass("active");
+		$anchor.addClass("active");
 		$('html, body').stop().animate({
 			scrollTop: top_height
 		}, 1500,'easeInOutExpo');
 		event.preventDefault();
 	});
+	
+	/* Back Top.
+	Used: Buttton at the corner right to scroll to the top */
+	$('#back-top').click(function(e){
+		$('nav#main-nav a').removeClass("active");
+		$('nav#main-nav li.home a').addClass("active");
+		e.preventDefault();
+		$('body,html').animate({scrollTop:0},800);
+	}); 
 	
 });
 </script>
