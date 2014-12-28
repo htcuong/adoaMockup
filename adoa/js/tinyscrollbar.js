@@ -3,7 +3,7 @@
     };
     a.tiny.scrollbar = {
         options: {
-            axis: 'y',
+            axis: 'x',
             wheel: 40,
             scroll: true,
             lockscroll: true,

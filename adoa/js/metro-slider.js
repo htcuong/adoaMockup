@@ -10,14 +10,14 @@ var pauseOnHover = 1; // 1 = Pause on Hover, 0 = Not Pause on Hover
 
 var iDo=0;
 var myInterval;
-var target =  $(".vc_metro-wrapper");
+var target =  $(".ad_metro-wrapper");
 var run=false;
 
 
 $(window).load(function(){	  
 	metro_slider();
 	if (!run) {
-		if (($('.vc_metro-wrapper:hover').length != 0) & (pauseOnHover)) {
+		if (($('.ad_metro-wrapper:hover').length != 0) & (pauseOnHover)) {
     		stopLoop();
 		} else {
 			startLoop();
@@ -37,7 +37,7 @@ $(window).resize(function(){
 
 function metro_slider(){
 	var metroSlider = 0;
-	$('.vc_metro-slider ul li').each(function(){
+	$('.ad_metro-slider ul li').each(function(){
 			var slide_width= $(this).width();
 			if ($(this).hasClass('odd')){
 				metroSlider = metroSlider + slide_width + 5;
@@ -47,21 +47,22 @@ function metro_slider(){
 			}
 	});	
 	metroSlider+=5;
-	$('.vc_metro-slider').css('width', metroSlider + 'px');
+	$('.ad_metro-slider').css('width', metroSlider + 'px');
 	var padding=400;
 	var scrollwidth=$('#works').width()-padding;
 			
-	$('html.no-touch .vc_metro-wrapper').tinyscrollbar({
+	$('html.no-touch .ad_metro-wrapper').tinyscrollbar({
 		axis: 'x',
 		size: scrollwidth,
 		sizethumb: 'auto',
-		invertscroll: true
+		invertscroll: true,
+		scroll: false
 	});
-	$('html.touch .vc_metro-wrapper .viewport').css({
+	$('html.touch .ad_metro-wrapper .viewport').css({
 		'width': $(window).innerWidth()+'px',
 		'overflow-x' :'scroll',
 	});	
-	$('html.touch .vc_metro-wrapper .scrollbar').hide();
+	$('html.touch .ad_metro-wrapper .scrollbar').hide();
 }
 
 function startLoop(){
@@ -72,39 +73,39 @@ function stopLoop(){
 }
 			   
 function runSlide(){
-	var pos= $('.vc_metro-wrapper .thumb').position();
+	var pos= $('.ad_metro-wrapper .thumb').position();
 	var barpos = pos.left;
 
-	var pos= $('.vc_metro-wrapper .overview').position();
+	var pos= $('.ad_metro-wrapper .overview').position();
 	var slidepos = pos.left;
 
 	//increment calculation
-	var barinc= ($('.vc_metro-wrapper .track').width() - $('.vc_metro-wrapper .thumb').width()) / movement;
+	var barinc= ($('.ad_metro-wrapper .track').width() - $('.ad_metro-wrapper .thumb').width()) / movement;
 	
 	var widthconst = $(window).width();
 	if ($('body').hasClass('boxed')) { widthconst = $('.container').width()+50; }
 	
-	var slideinc= (widthconst - $('.vc_metro-wrapper .vc_metro-slider').width()) / movement;
+	var slideinc= (widthconst - $('.ad_metro-wrapper .ad_metro-slider').width()) / movement;
 
 	// make 0 again when reach max
 	iDo = (iDo+ 1) % (movement+1);
 
 	//animate the metroslider
-	$('html.no-touch .vc_metro-wrapper .thumb').animate({
+	$('html.no-touch .ad_metro-wrapper .thumb').animate({
 			left: iDo * barinc
 		}, 1000, function(){
 	});
-	$('html.no-touch .vc_metro-wrapper .overview').animate({
+	$('html.no-touch .ad_metro-wrapper .overview').animate({
 			left: iDo * slideinc -iDo*2
 		}, 1000, function(){
 	});
 	
-	$('html.touch .vc_metro-wrapper .viewport').animate({
-			scrollLeft: iDo * (($('.vc_metro-wrapper .vc_metro-slider').width() - $(window).innerWidth()) / movement )
+	$('html.touch .ad_metro-wrapper .viewport').animate({
+			scrollLeft: iDo * (($('.ad_metro-wrapper .ad_metro-slider').width() - $(window).innerWidth()) / movement )
 		}, 1000, function(){
 	});		
 		
-/*	$('html.touch .vc_metro-wrapper .viewport').scrollLeft(iDo * slideinc -iDo*2);/*animate({
+/*	$('html.touch .ad_metro-wrapper .viewport').scrollLeft(iDo * slideinc -iDo*2);/*animate({
 			$(this).scrollLeft(iDo * slideinc -iDo*2);
 		}, 1000, function(){
 	});	*/
